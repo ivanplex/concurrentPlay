@@ -1,5 +1,7 @@
 package main.java;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -19,9 +21,17 @@ import java.util.List;
  */
 public class Analytics {
 
+    List<VideoPlayInfo> plays;
 
     int getMaximumConcurrentPlays(VideoPlayInfo[] plays) {
-        // return maximum concurrency
+
+        this.plays = Arrays.asList(plays);
+        Collections.sort(this.plays);
+
+        for (VideoPlayInfo play: plays) {
+            System.out.println(play);
+        }
+
         return plays.length;
     }
 }
