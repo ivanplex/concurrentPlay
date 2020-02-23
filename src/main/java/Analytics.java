@@ -26,6 +26,7 @@ public class Analytics {
 
     public int getMaximumConcurrentPlays(VideoPlayInfo[] plays) throws Exception {
 
+        //If no play record, throw error
         if (plays.length <1) {
             throw new Exception("Empty plays");
         }
@@ -35,7 +36,7 @@ public class Analytics {
 
         int watching = 1, max_watching = 1;
         Instant timeAtMaxWatch = this.plays.get(0).getStartTime(); // Track time when maximum concurrency occurs
-        int i = 1, j = 0;
+        int i = 1, j = 0;   //Start and end time indexes
 
         while (i < plays.length && j < plays.length)
         {
