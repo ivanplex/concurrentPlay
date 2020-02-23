@@ -19,12 +19,19 @@ public class TestAnalytics {
 
 
     @Test(expected = Exception.class)
+    /**
+     * Scenario:
+     * When provided with empty list. List of 0 length has no max.
+     */
     public void testBlankVideoPlays() throws Exception {
         VideoPlayInfo[] plays = new VideoPlayInfo[0];
         analytics.getMaximumConcurrentPlays(plays);
     }
 
     @Test
+    /**
+     * Simple test of 2 concurrent plays.
+     */
     public void test2Videos(){
         VideoPlayInfo[] plays = {
                 new VideoPlayInfo(Instant.now().minusSeconds(5), Instant.now().minusSeconds(3)),
