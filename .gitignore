@@ -4,3 +4,5 @@
 
 # Raw files
 out/
+build/
+.gradle/

@@ -7,7 +7,13 @@ public class VideoPlayInfo implements Comparable<VideoPlayInfo>{
     public Instant startTime;
     public Instant endTime;
 
-    public VideoPlayInfo(Instant startTime, Instant endTime) {
+    public VideoPlayInfo(Instant startTime, Instant endTime) throws Exception {
+        if(startTime.compareTo(Instant.now()) > 0){
+            throw new Exception("Empty plays");
+        }
+        if(endTime.compareTo(Instant.now()) > 0){
+            throw new Exception("Empty plays");
+        }
         this.startTime = startTime;
         this.endTime = endTime;
     }
