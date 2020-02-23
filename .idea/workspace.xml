@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6739da58-07f2-487f-ab9f-227aafa2e67f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestAnalytics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ITV_hack/main/java/Analytics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITV_hack/main/java/Analytics.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ITV_hack/main/java/VideoPlayInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITV_hack/main/java/VideoPlayInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ITV_hack/main/java/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITV_hack/main/java/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ITV_hack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ITV_hack.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Analytics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Analytics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/VideoPlayInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VideoPlayInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,17 +23,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/VideoPlayInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+            <state relative-caret-position="44">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding>
-                <element signature="e#337#338#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#613#614#0" expanded="true" />
+                <element signature="e#891#892#0" expanded="true" />
+                <element signature="e#951#952#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Analytics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-196">
-              <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+            <state relative-caret-position="630">
+              <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,10 +51,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestAnalytics.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="108" selection-start-line="8" selection-start-column="108" selection-end-line="8" selection-end-column="108" />
+              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -77,9 +88,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/VideoPlayInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/Analytics.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestAnalytics.java" />
       </list>
     </option>
   </component>
@@ -121,6 +133,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -140,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestAnalytics">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.main" />
       <module name="ITV_hack" />
@@ -154,8 +170,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestAnalytics" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITV_hack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.TestAnalytics" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestAnalytics" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
@@ -171,12 +203,44 @@
       <option name="presentableId" value="Default" />
       <updated>1582472381475</updated>
       <workItem from="1582472383005" duration="145000" />
-      <workItem from="1582472802774" duration="6482000" />
+      <workItem from="1582472802774" duration="9710000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestAnalytics - 2020.02.23 at 18h 23m 21s.xml">
+      <configuration name="TestAnalytics" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnalytics - 2020.02.23 at 18h 24m 12s.xml">
+      <configuration name="TestAnalytics" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnalytics - 2020.02.23 at 18h 29m 24s.xml">
+      <configuration name="TestAnalytics" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnalytics - 2020.02.23 at 18h 47m 07s.xml">
+      <configuration name="TestAnalytics" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnalytics - 2020.02.23 at 18h 51m 51s.xml">
+      <configuration name="TestAnalytics" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnalytics - 2020.02.23 at 18h 52m 41s.xml">
+      <configuration name="TestAnalytics" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnalytics - 2020.02.23 at 18h 52m 50s.xml">
+      <configuration name="TestAnalytics" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnalytics - 2020.02.23 at 18h 55m 32s.xml">
+      <configuration name="TestAnalytics" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnalytics - 2020.02.23 at 20h 17m 08s.xml">
+      <configuration name="TestAnalytics" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnalytics - 2020.02.23 at 20h 19m 36s.xml">
+      <configuration name="TestAnalytics" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6627000" />
+    <option name="totallyTimeSpent" value="9855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -251,42 +315,46 @@
     <entry file="file://$PROJECT_DIR$/src/main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/VideoPlayInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        <state relative-caret-position="44">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
           <folding>
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestAnalytics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Analytics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Analytics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestAnalytics.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="108" selection-start-line="8" selection-start-column="108" selection-end-line="8" selection-end-column="108" />
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

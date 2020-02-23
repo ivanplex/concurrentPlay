@@ -39,12 +39,11 @@ public class Analytics {
 
         while (i < plays.length && j < plays.length)
         {
-            // If next event in sorted order is arrival,
-            // increment count of guests
+            // If the next event is a connection, increment watch
             if (this.plays.get(i).getStartTime().compareTo(this.plays.get(j).getEndTime()) < 0) {
                 watching++;
 
-                // Update max_guests if needed
+                // Update max_watching
                 if (watching > max_watching){
                     max_watching = watching;
                     timeAtMaxWatch = this.plays.get(i).getStartTime();
@@ -52,8 +51,8 @@ public class Analytics {
                 System.out.println(this.plays.get(i).getStartTime()+ "   Connect      "+watching);
                 i++; //increment index of arrival array
             }
-            else // If event is exit, decrement count
-            { // of guests.
+            else {
+                // If event a disconnection, decrement watching
                 watching--;
                 System.out.println(this.plays.get(j).getEndTime()+ "   Exit         "+watching);
                 j++;

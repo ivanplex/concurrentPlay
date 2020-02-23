@@ -2,7 +2,7 @@ package main.java;
 
 import java.time.Instant;
 
-class VideoPlayInfo implements Comparable<VideoPlayInfo>{
+public class VideoPlayInfo implements Comparable<VideoPlayInfo>{
 
     public Instant startTime;
     public Instant endTime;
