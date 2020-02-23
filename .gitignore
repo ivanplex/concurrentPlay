@@ -1,3 +1,6 @@
 #Project structure config
 .idea/
 *.iml
+
+# Raw files
+out/

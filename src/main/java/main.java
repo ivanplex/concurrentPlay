@@ -1,7 +1,6 @@
 package main.java;
 
 import java.time.Instant;
-import java.util.Collections;
 
 public class main {
 
@@ -12,6 +11,11 @@ public class main {
         VideoPlayInfo[] plays = {one, two};
         Analytics analytics = new Analytics();
 
-        System.out.println(analytics.getMaximumConcurrentPlays(plays));
+
+        try {
+            System.out.println("Max Watching:" + analytics.getMaximumConcurrentPlays(plays));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

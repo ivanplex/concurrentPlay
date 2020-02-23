@@ -1,5 +1,6 @@
 package main.java;
 
+import java.time.Instant;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -23,15 +24,49 @@ public class Analytics {
 
     List<VideoPlayInfo> plays;
 
-    int getMaximumConcurrentPlays(VideoPlayInfo[] plays) {
+    public int getMaximumConcurrentPlays(VideoPlayInfo[] plays) throws Exception {
 
-        this.plays = Arrays.asList(plays);
-        Collections.sort(this.plays);
-
-        for (VideoPlayInfo play: plays) {
-            System.out.println(play);
+        if (plays.length <1) {
+            throw new Exception("Empty plays");
         }
 
-        return plays.length;
+        this.plays = Arrays.asList(plays); // Convert into list
+        Collections.sort(this.plays);      // Sort by start time
+
+        int watching = 1, max_watching = 1;
+        Instant timeAtMaxWatch = this.plays.get(0).getStartTime(); // Track time when maximum concurrency occurs
+        int i = 1, j = 0;
+
+        while (i < plays.length && j < plays.length)
+        {
+            // If next event in sorted order is arrival,
+            // increment count of guests
+            if (this.plays.get(i).getStartTime().compareTo(this.plays.get(j).getEndTime()) < 0) {
+                watching++;
+
+                // Update max_guests if needed
+                if (watching > max_watching){
+                    max_watching = watching;
+                    timeAtMaxWatch = this.plays.get(i).getStartTime();
+                }
+                System.out.println(this.plays.get(i).getStartTime()+ "   Connect      "+watching);
+                i++; //increment index of arrival array
+            }
+            else // If event is exit, decrement count
+            { // of guests.
+                watching--;
+                System.out.println(this.plays.get(j).getEndTime()+ "   Exit         "+watching);
+                j++;
+            }
+        }
+
+        return max_watching;
+    }
+
+    private void printList(){
+
+        for (VideoPlayInfo play: this.plays) {
+            System.out.println(play);
+        }
     }
 }
