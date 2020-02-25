@@ -8,12 +8,16 @@ public class VideoPlayInfo implements Comparable<VideoPlayInfo>{
     public Instant endTime;
 
     public VideoPlayInfo(Instant startTime, Instant endTime) throws Exception {
-        if(startTime.compareTo(Instant.now()) > 0){
+        // Throw error if Instant is in the future
+        if(startTime.compareTo(Instant.now()) > 0 || endTime.compareTo(Instant.now()) > 0){
             throw new Exception("Empty plays");
         }
-        if(endTime.compareTo(Instant.now()) > 0){
-            throw new Exception("Empty plays");
+
+        // Throw error start time is after end time
+        if(startTime.compareTo(endTime) > 0){
+            throw new Exception("Start Time is after end time");
         }
+
         this.startTime = startTime;
         this.endTime = endTime;
     }

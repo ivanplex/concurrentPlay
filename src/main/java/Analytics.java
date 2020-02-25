@@ -16,6 +16,7 @@ import java.util.List;
  * Potential Problems:
  *      - plays hasn't ended
  *      - VideoPlay in the future
+ *      - Out of memory error due to list size
  *
  * @author  Ivan Chan
  * @since   2020-02-23
@@ -24,7 +25,14 @@ public class Analytics {
 
     List<VideoPlayInfo> plays;
 
-    public int getMaximumConcurrentPlays(VideoPlayInfo[] plays) throws Exception {
+    /**
+     * Fetch maximum number of concurrent plays in the logs
+     * @param plays unordered list of videoplayinfo
+     * @return int  max concurrency
+     * @throws Exception
+     * @throws OutOfMemoryError
+     */
+    public int getMaximumConcurrentPlays(VideoPlayInfo[] plays) throws Exception, OutOfMemoryError {
 
         //If no play record, throw error
         if (plays.length <1) {
@@ -63,6 +71,9 @@ public class Analytics {
         return max_watching;
     }
 
+    /**
+     * Print list in their current order
+     */
     private void printList(){
 
         for (VideoPlayInfo play: this.plays) {

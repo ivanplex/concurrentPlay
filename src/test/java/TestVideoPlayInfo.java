@@ -11,10 +11,29 @@ public class TestVideoPlayInfo {
     @Test(expected = Exception.class)
     /**
      * Scenario:
-     * Adding VideoPlayInfo from the future
+     * StartPlay instant in the future
      */
-    public void testFuture() throws Exception {
+    public void testStartPlayInTheFuture() throws Exception {
         new VideoPlayInfo(Instant.parse("2022-01-01T12:00:00.00Z"), Instant.parse("2022-01-01T13:00:00.00Z"));
     }
+
+    @Test(expected = Exception.class)
+    /**
+     * Scenario:
+     * EndPlay Instant in the future
+     */
+    public void testEndPlayInTheFuture() throws Exception {
+        new VideoPlayInfo(Instant.parse("2020-01-01T12:00:00.00Z"), Instant.parse("2022-01-01T13:00:00.00Z"));
+    }
+
+    @Test(expected = Exception.class)
+    /**
+     * Scenario:
+     * StartPlay is after Endplay
+     */
+    public void testStartPlayAferEndPlay() throws Exception {
+        new VideoPlayInfo(Instant.parse("2020-01-01T12:00:00.00Z"), Instant.parse("2019-01-01T13:00:00.00Z"));
+    }
+
 
 }
