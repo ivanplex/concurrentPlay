@@ -5,6 +5,9 @@
 - each play lasts at most a few hours
 - all of the plays happen during one calendar month
 
+**Derived Assumption** 
+- Data fits within memory (as passively stated in spec)
+
 ### Approach:
 
 Couple of approach that I could think of:
