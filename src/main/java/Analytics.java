@@ -18,6 +18,8 @@ import java.util.List;
  *      - VideoPlay in the future
  *      - Out of memory error due to list size
  *
+ * If dataset is too large MapReduce could be used in conjunction to facilitate the load
+ *
  * @author  Ivan Chan
  * @since   2020-02-23
  */
