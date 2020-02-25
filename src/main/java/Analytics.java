@@ -4,6 +4,7 @@ import java.time.Instant;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * Analytics program for counting the number of concurrent plays
@@ -25,6 +26,8 @@ import java.util.List;
  */
 public class Analytics {
 
+    private static final Logger LOGGER = Logger.getLogger("ProcessLogging");
+
     List<VideoPlayInfo> plays;
 
     /**
@@ -45,11 +48,10 @@ public class Analytics {
         Collections.sort(this.plays);      // Sort by start time
 
         int watching = 1, max_watching = 1;
-        Instant timeAtMaxWatch = this.plays.get(0).getStartTime(); // Track time when maximum concurrency occurs
         int i = 1, j = 0;   //Start and end time indexes
+        Instant timeAtMaxWatch = this.plays.get(0).getStartTime(); // Track time when maximum concurrency occurs
 
-        while (i < plays.length && j < plays.length)
-        {
+        while (i < plays.length && j < plays.length) {
             // If the next event is a connection, increment watch
             if (this.plays.get(i).getStartTime().compareTo(this.plays.get(j).getEndTime()) < 0) {
                 watching++;
@@ -59,13 +61,12 @@ public class Analytics {
                     max_watching = watching;
                     timeAtMaxWatch = this.plays.get(i).getStartTime();
                 }
-                System.out.println(this.plays.get(i).getStartTime()+ "   Connect      "+watching);
-                i++; //increment index of arrival array
-            }
-            else {
+                LOGGER.info(this.plays.get(i).getStartTime()+ "   Connect      "+watching);
+                i++;
+            } else {
                 // If event a disconnection, decrement watching
                 watching--;
-                System.out.println(this.plays.get(j).getEndTime()+ "   Exit         "+watching);
+                LOGGER.info(this.plays.get(j).getEndTime()+ "   Exit         "+watching);
                 j++;
             }
         }
