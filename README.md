@@ -15,4 +15,5 @@ plays in each second. Space complexity bad.
 2. Loop through all the plays and compare if any other plays are concurrently playing. O(n^2) time
 
 ### This approach
+Tracks each start end end time in time order while monitoring the number of concurrent connections.
 O(n log(n))
